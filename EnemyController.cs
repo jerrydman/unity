@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public float moveSpeed = 4f;
+    public float moveSpeed = 4f; //higher number moves faster 
     private Transform player;
 
     void Start()
@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //if enemy hits player destroys
         }
     }
 }
